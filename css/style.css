@@ -49,7 +49,7 @@ header {
 	width: 55%;
 /	margin-right: 20%;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 550px) {
 	#header_menu_nav {
 	display:none;
 	}
@@ -68,6 +68,16 @@ header {
 .header_menu:hover {
 /	font-weight: bold;
 	text-decoration-color: #222222;
+}
+@media screen and (max-width: 1114px) {
+	.header_menu {
+	font-size: 0.8rem;
+	}
+}
+@media screen and (max-width: 960px) {
+	.header_menu {
+	font-size: 0.6rem;
+	}
 }
 .ddmenu {
     display: none;
@@ -115,7 +125,7 @@ header {
 #header_icons_nav {
 	width: 15%;
 }
-	@media screen and (max-width: 960px) {
+@media screen and (max-width: 550px) {
 	#header_icons_nav {
 	display:none;
 	}
@@ -154,7 +164,7 @@ footer p {
 	overflow: wrap;
 /	justify-content: center;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
 	#main_home {
 	flex-direction: column;
 	}
@@ -163,7 +173,7 @@ footer p {
 	object-fit: cover;
 	width: 65%;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
 	#gazou_shikisai {
 	width: 100%;
 	}
@@ -177,7 +187,7 @@ footer p {
 	background: url(../images/concrete_texture.jpg);
 	background-size:cover;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
 	#gazou_concrete {
 	width: 100%;
 	}
@@ -247,6 +257,11 @@ footer p {
 	color: white;
 	background: rgb(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 320px) {
+	#page_title_jugyou {
+	font-size: 3rem;
+	}
+}
 #setsumei_jugyou {
 	padding: 1%;
 	font-size: 1.3rem;
@@ -262,6 +277,11 @@ footer p {
 	margin-top: 5%;
 	}
 }
+@media screen and (max-width: 320px) {
+	#setsumei_jugyou {
+	font-size: 1rem;
+	}
+}
 .syousai_contents {
 	margin: 3% auto 6%;
 	text-align: center;
@@ -273,10 +293,20 @@ footer p {
 	text-decoration: 7% wavy underline #222222;
 	text-underline-offset: 7%;
 }
+@media screen and (max-width: 420px) {
+	.contents_title {
+	font-size: 1.8rem;
+	}
+}
 .contents_description {
 	width: 70%;
 	margin: 0 auto;
 	font-size: 1.3rem;
+}
+@media screen and (max-width: 420px) {
+	.contents_description {
+	font-size: 1rem;
+	}
 }
 .border_jugyou {
 	border-top: 5px dotted #222222;
@@ -358,6 +388,18 @@ footer p {
 @media screen and (max-width: 960px) {
 	.curriculum_dankai {
 	height: 44%;
+	font-size: 1rem;
+	}
+}
+@media screen and (max-width: 420px) {
+	.curriculum_dankai {
+	height: 39%;
+	font-size: 1rem;
+	}
+}
+@media screen and (max-width: 320px) {
+	.curriculum_dankai {
+	height: 50%;
 	font-size: 1rem;
 	}
 }
