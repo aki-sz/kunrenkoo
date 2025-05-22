@@ -65,6 +65,11 @@ header {
 	text-decoration: underline;
 	text-decoration-color: #ccc
 }
+@media screen and (max-width: 550px) {
+	.header_menu {
+	display:none;
+	}
+}
 .header_menu:hover {
 /	font-weight: bold;
 	text-decoration-color: #222222;
