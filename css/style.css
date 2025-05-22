@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+body {
+	font-family: "Century Gothic", Futura, "游ゴシック", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-seri;
+	height: 100%;
+	color: #222222;
+}
+#container {
+	box-sizing: border-box;
+	height: 100vh;
+	overflow-y: scroll;
+}
+@media screen and (max-width: 450px) {
+	#container {
+	overflow-y: visible;
+	}
+}
+/* ヘッダー */
+header {
+	position: sticky;
+	top: 0;
+	max-width: 100vw;
+	background: rgb(255, 255, 255, 0.9);
+}
+#header_wrapper {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1% 0 1%;
+	width: 75%;
+}
+@media screen and (max-width: 960px) {
+	#header_wrapper {
+	width: 90%;
+	}
+}
+#header_logo {
+	display: block;
+	margin-bottom: 0.2%;
+	margin-right: 5%;
+	width: 20%;
+	min-width: 150px
+}
+#header_logo img {
+	width: 100%;
+}
+#header_menu_nav {
+	width: 55%;
+/	margin-right: 20%;
+}
+@media screen and (max-width: 960px) {
+	#header_menu_nav {
+	display:none;
+	}
+}
+#menu_parent {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10%;
+}
+.header_menu {
+	text-wrap: nowrap;
+/	font-family: "游ゴシック Regular", "Yu Gothic Regular";
+	text-decoration: underline;
+	text-decoration-color: #ccc
+}
+.header_menu:hover {
+/	font-weight: bold;
+	text-decoration-color: #222222;
+}
+.ddmenu {
+    display: none;
+    width: 15%;
+    position: absolute;
+	top: 65%;
+}
+.header_menu:hover .ddmenu {
+	position: absolute;
+    display: block;
+}
+.ddmenu {
+	font-weight: normal;
+	transition: all 0.5s;
+    position: relative;
+}
+.ddmenu li {
+	padding: 10%;
+	background-color: white;
+	border: 1px solid black;
+	border-bottom: none;
+}
+.ddmenu li:last-child {
+	border-bottom: 1px solid #222222;
+}
+.ddmenu li:hover {
+/	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: #222222;
+    background-color: #ccc;
+}
+.ddmenu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+.header_icons {
+	padding-right: 2%;
+}
+.header_icons:last-child {
+	padding: 0;
+}
+#header_icons_nav {
+	width: 15%;
+}
+	@media screen and (max-width: 960px) {
+	#header_icons_nav {
+	display:none;
+	}
+}
+#header_icons_nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* フッター */
+footer {
+	border-top: 1px solid #CCC;
+	margin-bottom: 1%;
+}
+#footer_wrapper {
+	margin: 0 auto;
+	padding: 0.5% 0 1%;
+	width: 77%;
+}
+@media screen and (max-width: 960px)  {
+	#footer_wrapper {
+	width: 90%;
+	}	
+}
+footer p {
+	margin-top: 0.4%;
+}
+
+/* トップ */
+#main_home {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: wrap;
+/	justify-content: center;
+}
+@media screen and (max-width: 960px) {
+	#main_home {
+	flex-direction: column;
+	}
+}
+#gazou_shikisai {
+	object-fit: cover;
+	width: 65%;
+}
+@media screen and (max-width: 960px) {
+	#gazou_shikisai {
+	width: 100%;
+	}
+}
+#gazou_concrete {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35%;
+	flex-direction: column;
+	background: url(../images/concrete_texture.jpg);
+	background-size:cover;
+}
+@media screen and (max-width: 960px) {
+	#gazou_concrete {
+	width: 100%;
+	}
+}
+#gazou_concrete h2 {
+	margin-top: 5%;
+	margin-bottom: 6%;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	letter-spacing: -1px;
+}
+.setsumei_moushikomi {
+	margin: 0 auto 5%;
+	display: flex;
+	font-size: 2rem;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	width: 65%;
+	color: white;
+	background: #222222;
+	padding: 2% 0 2%;
+}
+.setsumei_moushikomi img {
+	max-width: 10%;
+	min-width: 30px;
+}
+
+/* 授業内容 */
+#gazou_jugyou {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../images/about_class/class.jpg);
+	background-size:cover;
+	background-position-y: 100%;
+	width: 100%;
+	height: 75%;
+}
+@media screen and (max-width: 960px) {
+	#gazou_jugyou {
+	height: 60%;
+	}
+}
+@media screen and (max-width: 550px) {
+	#gazou_jugyou {
+	height: 75%;
+	}
+}
+#jugyou_text_box {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 75%;
+}
+@media screen and (max-width: 960px) {
+	#jugyou_text_box {
+	flex-direction: column;
+	}
+}
+#page_title_jugyou {
+	padding: 1%;
+	width: auto;
+	text-wrap: nowrap;
+	font-size: 3.5rem;
+	color: white;
+	background: rgb(0, 0, 0, 0.5);
+}
+#setsumei_jugyou {
+	padding: 1%;
+	font-size: 1.3rem;
+	text-align: justify;
+	line-height: 1.5;
+	color: white;
+	background: rgb(0, 0, 0, 0.5);
+	width: 55%;
+}
+@media screen and (max-width: 960px) {
+	#setsumei_jugyou {
+	width: 100%;
+	margin-top: 5%;
+	}
+}
+.syousai_contents {
+	margin: 3% auto 6%;
+	text-align: center;
+	width: 70%;
+}
+.contents_title {
+	margin-bottom: 2.5%;
+	font-size: 2.6rem;
+	text-decoration: 7% wavy underline #222222;
+	text-underline-offset: 7%;
+}
+.contents_description {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 1.3rem;
+}
+.border_jugyou {
+	border-top: 5px dotted #222222;
+}
+#gijutsu_box {
+	display: flex;
+	justify-content: center;
+}
+@media screen and (max-width: 550px) {
+	#gijutsu_box {
+	flex-direction: column;
+	align-items: center;
+	}
+}
+#gijutsu_box h3 {
+	font-size: 1.4rem;
+/	margin-bottom: 1%;
+}
+#graphic_soft, #web_seisaku {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+	border: 3px solid #222222;
+	width: 30%;
+	height: auto;
+	margin-top: 2%;
+	padding: 1.5%;
+}
+@media screen and (max-width: 550px) {
+	#graphic_soft, #web_seisaku {
+	width: 75%
+	}
+}
+#graphic_soft {
+	border-right: none;
+}
+@media screen and (max-width: 550px) {
+	#graphic_soft {
+	border-right: 3px solid #222222;
+	}
+}
+#graphic_soft span, #web_seisaku span {
+	font-weight: bold;
+	text-decoration: 1px underline #222222;
+}
+.description_img {
+	margin-bottom: 2%;
+}
+.description_img img {
+	margin: 0 auto;
+	width: 70%;
+}
+.description_text {
+/	font-weight: bold;
+	line-height: 1.3;
+/	text-align: justify;
+}
+#curriculum {
+	margin: 0 auto;
+	width:75%;
+}
+#curriculum ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.curriculum_dankai {
+	margin-top: 3%;
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: -0.05rem;
+	height: 70%;
+	padding: 0 2% 0 2%;
+	writing-mode:vertical-lr;
+	text-orientation: upright;
+	border: 3px solid #222222;
+}
+@media screen and (max-width: 960px) {
+	.curriculum_dankai {
+	height: 44%;
+	font-size: 1rem;
+	}
+}
+#curriculum ul p img {
+	margin: 0 auto;
+	padding: 0 5% 0 5%;
+	width: 65%;
+	min-width: 20px;
+}
+#shien_gazou {
+	margin-top: 3%;
+}
+#shien_gazou img {
+	margin: 0 auto;
+	width: 20%;
+	min-width: 150px;
+}
