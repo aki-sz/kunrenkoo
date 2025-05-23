@@ -49,12 +49,53 @@
 						<li class="header_icons"><a href="#"><img src="images/ico_search.png"></a></li>
 					</ul>
 				</nav>
+				<div class="hamburger-menu">
+					<input type="checkbox" id="menu-btn-check">
+					<label for="menu-btn-check" class="menu-btn"><span></span></label>
+					<div class="menu-content">
+						<ul id="menu_all">
+							<li class="parent_list">
+								<a href="#" class="ichikaisou">HOME</a>
+							</li>
+							<li class="parent_list">
+								<input type="checkbox" id="menu-content-check-shisetsu">
+								<label for="menu-content-check-shisetsu" class="menu-content-parent"><a
+										class="nikaisou">施設案内</span></a></label>
+								<ul class="menu-content-child">
+									<li><a href="#" class="ichikaisou">求職者支援とは</a></li>
+									<li><a href="about_class.html" class="ichikaisou">授業内容</a></li>
+									<li><a href="#" class="ichikaisou">教室一覧</a></li>
+								</ul>
+							</li>
+							<li class="parent_list">
+								<input type="checkbox" id="menu-content-check-course">
+								<label for="menu-content-check-course" class="menu-content-parent"><a
+										class="nikaisou">募集中のコース</span></a></label>
+								<ul class="menu-content-child">
+									<li><a href="#" class="ichikaisou">WEBデザイン科</a></li>
+									<li><a href="about_class.html" class="ichikaisou">グラフィックデザイン科</a></li>
+								</ul>
+							</li>
+							<li class="parent_list">
+								<a href="#" class="ichikaisou">能力検定試験</a>
+							</li>
+							<li class="parent_list">
+								<input type="checkbox" id="menu-content-check-sotsugyou">
+								<label for="menu-content-check-sotsugyou" class="menu-content-parent"><a
+										class="nikaisou">修了生の声</span></a></label>
+								<ul class="menu-content-child">
+									<li><a href="#" class="ichikaisou">修了生作品</a></li>
+									<li><a href="about_class.html" class="ichikaisou">修了生アンケート</a></li>
+							</li>
+						</ul>
+					</div><!--menu_content-->
+				</div><!--header_wrapper-->
 			</div><!--header_wrapper-->
 		</header>
 
 		<main id="main_home">
 			<picture id="gazou_shikisai">
-				<source media="(max-width: 550px)" srcset="images/top_gazou_shikisai_v3_smaho.png">
+				<source media="(max-width: 550px)" srcset="images/top_gazou_shikisai_v3_smaho_2.png">
 				<img src="images/top_gazou_shikisai_v2.png" alt="メイン画像" style="width: 100%; object-fit: cover;">
 			</picture>
 			<div id="gazou_concrete">
