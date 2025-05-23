@@ -311,7 +311,7 @@ footer p {
 }
 @media screen and (max-width: 550px) {
 	#gazou_concrete {
-	min-height: 550px;
+	min-height: 70vh;
 	}
 }
 #gazou_concrete h2 {
