@@ -35,6 +35,11 @@ header {
 	width: 90%;
 	}
 }
+@media screen and (max-width: 550px) {
+	#header_wrapper {
+	padding: 4% 0 4%;
+	}
+}
 #header_logo {
 	display: block;
 	margin-bottom: 0.2%;
@@ -221,6 +226,11 @@ footer p {
 	color: white;
 	background: #222222;
 	padding: 2% 0 2%;
+}
+@media screen and (max-width: 320px) {
+	.setsumei_moushikomi {
+	font-size: 1.5rem;
+	}
 }
 .setsumei_moushikomi img {
 	max-width: 10%;
