@@ -197,6 +197,11 @@ footer p {
 	width: 100%;
 	}
 }
+@media screen and (max-width: 550px) {
+	#gazou_concrete {
+	min-height: 550px;
+	}
+}
 #gazou_concrete h2 {
 	margin-top: 5%;
 	margin-bottom: 6%;
